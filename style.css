@@ -1,9 +1,12 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
 /* ===== Global Styles ===== */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
     color: #333;
 }
 
@@ -13,6 +16,7 @@ a {
 }
 
 h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
     margin: 0 0 15px 0;
 }
 
@@ -24,6 +28,9 @@ h1, h2, h3 {
     background-color: #0083b0;
     padding: 15px 50px;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo span {
@@ -45,51 +52,61 @@ nav a:hover {
 /* ===== Hero Section ===== */
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(90deg, #00b4db, #0083b0);
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
     color: white;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    line-height: 1.6;
 }
 
 /* ===== Motivational Text ===== */
 .motivational {
     text-align: center;
-    margin: 40px 20px;
-    font-size: 1.5em;
+    margin: 50px 20px;
+    font-size: 1.6em;
     font-weight: bold;
-    color: #0083b0;
+    color: #00b4db;
 }
 
-/* ===== About & Services Sections ===== */
-.about {
-    max-width: 900px;
+/* ===== Sections (About, Services) ===== */
+.about, .services {
+    max-width: 1000px;
     margin: 50px auto;
-    padding: 0 20px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-.about p {
+.about p, .services p {
     font-size: 1.1em;
-    line-height: 1.6em;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
 /* ===== Staff Cards ===== */
 .staff-member {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin: 20px auto;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+    margin: 30px auto;
     max-width: 500px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.staff-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .staff-member h3 {
@@ -101,11 +118,30 @@ nav a:hover {
     font-size: 1em;
 }
 
+/* ===== Buttons ===== */
+a.button {
+    display: inline-block;
+    background: #00b4db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+a.button:hover {
+    background: #0083b0;
+    transform: translateY(-3px);
+}
+
 /* ===== Footer ===== */
 footer {
     background-color: #0083b0;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin-top: 50px;
+    font-size: 1em;
 }
+
