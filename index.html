@@ -7,6 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
     <a href="https://wa.me/27721571102" class="whatsapp-float">Chat with us</a>
+   
+    <script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 80){
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+
 
 <body>
 
@@ -78,6 +92,7 @@
 
 </body>
 </html>
+
 
 
 
