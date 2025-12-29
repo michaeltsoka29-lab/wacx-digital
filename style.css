@@ -1,74 +1,111 @@
+/* ===== Global Styles ===== */
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0a0f2c;
-  color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+a {
+    text-decoration: none;
+    color: #0083b0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 15px 0;
+}
+
+/* ===== Header & Navigation ===== */
 .top {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10%;
-  background: #050814;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0083b0;
+    padding: 15px 50px;
+    color: white;
 }
 
 .logo span {
-  color: #f7b500;
+    font-weight: bold;
+    color: #00b4db;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+nav a:hover {
+    color: #00b4db;
+}
+
+/* ===== Hero Section ===== */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: linear-gradient(135deg,#0a1aff,#060b4d);
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    color: white;
 }
 
 .hero h1 {
-  font-size: 48px;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
-  background: #f7b500;
-  color: black;
-  border-radius: 30px;
-  text-decoration: none;
+.hero p {
+    font-size: 1.2em;
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-  gap: 20px;
-  padding: 60px 10%;
+/* ===== Motivational Text ===== */
+.motivational {
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0083b0;
 }
 
-.card {
-  background: #11163b;
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-}
-
+/* ===== About & Services Sections ===== */
 .about {
-  padding: 60px 10%;
-  background: #050814;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+}
+
+/* ===== Staff Cards ===== */
+.staff-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.staff-member h3 {
+    color: #0083b0;
+    margin-bottom: 10px;
+}
+
+.staff-member p {
+    font-size: 1em;
+}
+
+/* ===== Footer ===== */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-  font-size: 14px;
+    background-color: #0083b0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
