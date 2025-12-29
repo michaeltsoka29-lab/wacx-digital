@@ -79,20 +79,6 @@ a.button {
 a.button:hover {
     background: var(--secondary);
 }
-.card {
-    background: rgba(255,255,255,0.85);
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    transition: 0.4s cubic-bezier(.2,.8,.2,1);
-    text-align: center;
-    backdrop-filter: blur(8px);
-}
-
-.card:hover {
-    transform: translateY(-15px) scale(1.02);
-    box-shadow: 0 30px 70px rgba(0,0,0,0.35);
-}
 
 /* ===== Hero Section ===== */
 .hero {
@@ -275,6 +261,23 @@ footer {
 .hero .button {
     animation: fadeUp 2s ease forwards;
 }
+
+.card {
+    background: rgba(255,255,255,0.85);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: 0.4s cubic-bezier(.2,.8,.2,1);
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+}
+
+
 
 
 
