@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* ===== Google Fonts ===== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
 
@@ -225,6 +229,31 @@ footer {
     margin-top: 50px;
     font-size: 1em;
 }
+
+@media (max-width: 768px) {
+
+    .top {
+        padding: 15px 25px;
+    }
+
+    nav a {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 2.3em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 
