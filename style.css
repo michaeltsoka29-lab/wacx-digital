@@ -48,13 +48,35 @@ nav a {
 nav a:hover {
     color: #00b4db;
 }
+:root {
+    --primary: #00b4db; /* gradient start */
+    --secondary: #0083b0; /* gradient end */
+    --accent: #005f7a; /* buttons hover, links */
+}
+
+.motivational {
+    color: var(--primary);
+}
+
+a.button {
+    background: var(--primary);
+}
+
+a.button:hover {
+    background: var(--secondary);
+}
 
 /* ===== Hero Section ===== */
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(135deg, #00b4db, #0083b0);
+    background: linear-gradient(135deg, rgba(0,180,219,0.7), rgba(0,131,176,0.7)), url('hero-placeholder.jpg') center/cover no-repeat;
     color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -121,19 +143,20 @@ nav a:hover {
 /* ===== Buttons ===== */
 a.button {
     display: inline-block;
-    background: #00b4db;
+    background: var(--primary);
     color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
+    padding: 14px 30px;
+    border-radius: 12px;
     font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
-    margin-top: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background 0.3s;
 }
 
 a.button:hover {
-    background: #0083b0;
     transform: translateY(-3px);
+    background: var(--secondary);
 }
+
 
 /* ===== Footer ===== */
 footer {
@@ -144,4 +167,5 @@ footer {
     margin-top: 50px;
     font-size: 1em;
 }
+
 
