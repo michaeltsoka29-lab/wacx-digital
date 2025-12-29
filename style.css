@@ -22,15 +22,20 @@ h1, h2, h3 {
 
 /* ===== Header & Navigation ===== */
 .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0083b0;
-    padding: 15px 50px;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Updated Background */
+  background-color: rgba(0, 131, 176, 0.85); 
+  backdrop-filter: blur(10px); /* Blurs content behind the header */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px 50px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
 }
 
 .logo span {
@@ -87,6 +92,23 @@ a.button:hover {
 .hero p {
     font-size: 1.4em;
     line-height: 1.6;
+}
+/* Add this to your Hero Section */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-out; /* Add entry animation */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===== Motivational Text ===== */
@@ -167,5 +189,6 @@ footer {
     margin-top: 50px;
     font-size: 1em;
 }
+
 
 
