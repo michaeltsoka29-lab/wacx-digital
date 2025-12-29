@@ -79,11 +79,6 @@ a.button:hover {
     color: white;
 }
 
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .hero h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
@@ -189,6 +184,7 @@ footer {
     margin-top: 50px;
     font-size: 1em;
 }
+
 
 
 
