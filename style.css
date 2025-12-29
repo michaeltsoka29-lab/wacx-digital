@@ -22,21 +22,26 @@ h1, h2, h3 {
 
 /* ===== Header & Navigation ===== */
 .top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* Updated Background */
-  background-color: rgba(0, 131, 176, 0.85); 
-  backdrop-filter: blur(10px); /* Blurs content behind the header */
-  -webkit-backdrop-filter: blur(10px);
-  padding: 15px 50px;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+
+    background: rgba(10, 25, 47, 0.35);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    z-index: 9999;
 }
+body {
+    padding-top: 90px;
 }
+
 
 .logo span {
     font-weight: bold;
@@ -184,6 +189,7 @@ footer {
     margin-top: 50px;
     font-size: 1em;
 }
+
 
 
 
