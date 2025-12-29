@@ -92,8 +92,22 @@ window.addEventListener("scroll", () => {
     <p>© 2025 WACX Digital</p>
 </footer>
 
+    <script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 80){
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+
 </body>
 </html>
+
 
 
 
