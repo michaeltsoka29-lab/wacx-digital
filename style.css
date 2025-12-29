@@ -1,3 +1,15 @@
+/* ===== Smooth Scroll Reveal Animations ===== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.9s cubic-bezier(.21,.75,.35,1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -352,6 +364,7 @@ footer {
     box-shadow: 0 20px 60px rgba(0,180,255,0.45);
     border-color: rgba(0,180,255,0.6);
 }
+
 
 
 
